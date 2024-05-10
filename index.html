@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>OTP Verification</title>
+</head>
+<body>
+
+<div class="otp-container">
+  <h2>OTP Verification</h2>
+  <p class="otp-message">Please enter the OTP sent to your mobile number.</p>
+  <div class="otp-input">
+    <input type="text" id="otp" maxlength="6" placeholder="Enter OTP">
+    <button onclick="verifyOTP()">Verify</button>
+  </div>
+  <p id="otp-error" style="color: red; display: none;">Invalid OTP. Please try again.</p>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
