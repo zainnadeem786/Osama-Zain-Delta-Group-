@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(54, 8, 54);
+  }
+  
+  nav {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(158, 28, 158);
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav ul li a {
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .search{
+    display:flex;
+    align-items: center;
+    margin-right: 0;
+  }
+  .search form{
+    display: flex;
+    margin: 0;
+  }
+  .search input {
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+.search input:hover{
+  border: 1px solid #72a0d4;
+}
+.search button{
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 19px;
+  cursor: pointer;
+}
+.search button:hover{
+  background-color: skyblue;
+}
+
+  .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-item {
+    margin: 22px;
+    position: relative;
+  }
+  
+  .movie-item img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .slidebar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid;
+    height: 0;
+    background-color: white;
+    color:black;
+    padding: 20px;
+    transition: height 0.3s;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  
+  .slidebar h2 {
+    margin-top: 0;
+    overflow: auto;
+  }
+  
+  .movie-item:hover .slidebar {
+    height: 150px;
+  }
+  ::-webkit-scrollbar{
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: white;
+  }
+
+  footer{
+    background-color: rgb(158, 28, 158);
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
