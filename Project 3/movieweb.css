@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Cabin", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.container-fluid {
+    background-color: #060D17;
+    height: 60px;
+}
+
+b {
+    color: #f5ca38;
+}
+.dropdown-item {
+    background-color: #fff;
+}
+input[type="search"] {
+    background-color: #1a2027;
+    width: 300px;
+    border: transparent;
+}
+input[type="search"]::placeholder {
+    color: #ADAFB0;
+}
+.search-icon {
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-top: 5px;
+    color: #ADAFB0; /* Adjust color as needed */
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f5ca38;
+}
+  
+.movie-item {
+    margin: 22px;
+    position: relative;
+}
+  
+.movie-item img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid wheat;
+}
+  
+.slidebar {
+    font-size:x-small;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid;
+    height: 0;
+    background-color: white;
+    color:black;
+    padding: 20px;
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 2px;
+}
+  
+.slidebar h2 {
+    margin-top: 0;
+    overflow: auto;
+}
+  
+.movie-item:hover .slidebar {
+    height: 300px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+  footer{
+    background-color: #060D17;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+.page-link {
+    margin-top: 15px;
+}
+.search-icon {
+    cursor: pointer;
+}
