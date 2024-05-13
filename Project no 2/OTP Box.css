@@ -110,3 +110,6 @@ form, a{
 .container form button:hover {
     background: #4035d6e9;
 }
+.resend {
+    text-decoration: underline;
+}
